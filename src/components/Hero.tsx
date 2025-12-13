@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail, Phone, FileText } from 'lucide-react';
+import { Linkedin, Mail, Phone, FileText } from 'lucide-react';
 
 const Hero = () => {
   return (
