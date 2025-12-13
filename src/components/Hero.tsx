@@ -95,7 +95,7 @@ const Hero = () => {
 
   {/* Image */}
   <img
-    src="/linkedin.jpg"
+    src={`${import.meta.env.BASE_URL}linkedin.jpg`}
     alt="Syam Siddu"
     className="relative w-72 h-72 md:w-96 md:h-96 rounded-full object-cover shadow-2xl border-8 border-white
                transition-all duration-500 ease-out

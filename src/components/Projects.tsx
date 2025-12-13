@@ -1,6 +1,11 @@
 import { ExternalLink, Github } from 'lucide-react';
 
 const Projects = () => {
+  const getImagePath = (image: string) => {
+    if (image.startsWith('http')) return image;
+    return `${import.meta.env.BASE_URL}${image}`;
+  };
+
   const projects = [
     {
       title: ' Live Weather Using APIs',
@@ -63,7 +68,7 @@ const Projects = () => {
             >
               <div className="relative overflow-hidden h-48">
                 <img
-                  src={project.image}
+                  src={getImagePath(project.image)}
                   alt={project.title}
                   className="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
                 />

@@ -3,28 +3,30 @@ import emailjs from '@emailjs/browser';
 import { useRef } from 'react';
 
 const Contact = () => {
-  const formRef = useRef();
+  const formRef = useRef<HTMLFormElement>(null);
 
-  const sendEmail = (e) => {
+  const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    emailjs
-      .sendForm(
-        'service_waags9f',
-        'template_tou7533',
-        formRef.current,
-        'EeHWRfkYJ3r6noaSm'
-      )
-      .then(
-        () => {
-          alert('Message sent successfully!');
-          formRef.current.reset();
-        },
-        (error) => {
-          console.error(error);
-          alert('Failed to send message');
-        }
-      );
+    if (formRef.current) {
+      emailjs
+        .sendForm(
+          'service_waags9f',
+          'template_tou7533',
+          formRef.current,
+          'EeHWRfkYJ3r6noaSm'
+        )
+        .then(
+          () => {
+            alert('Message sent successfully!');
+            formRef.current?.reset();
+          },
+          (error) => {
+            console.error(error);
+            alert('Failed to send message');
+          }
+        );
+    }
   };
 
   return (
@@ -92,7 +94,7 @@ const Contact = () => {
 
               <textarea
                 name="message"
-                rows="4"
+                rows={4}
                 required
                 placeholder="Your Message"
                 className="w-full px-4 py-3 border rounded-lg resize-none"
