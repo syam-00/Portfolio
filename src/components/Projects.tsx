@@ -34,8 +34,8 @@ const Projects = () => {
       technologies: ['HTML', 'CSS', 'JavaScript'],
       image:
         'https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg?auto=compress&cs=tinysrgb&w=800',
-      link: '#',
-      github: '#',
+      link: 'https://syam-00.github.io/Live-Weather-/',  //uses same link for live weather
+      github: 'https://github.com/syam-00/Live-Weather-.git',
     },
     {
       title: 'SyncRoom',
