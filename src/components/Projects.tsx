@@ -44,7 +44,7 @@ const Projects = () => {
       technologies: ['React', 'JavaScript', 'WebSockets', 'Node.js'],
       image:
         'sr.jpg',
-      link: 'https://github.com/syam-00/SyncRoom.git',
+      link: 'https://sync-rooms.vercel.app/', //updated SyncRoom Link
       github: 'https://github.com/syam-00/SyncRoom.git',
     },
   ];
