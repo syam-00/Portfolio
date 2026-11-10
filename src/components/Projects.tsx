@@ -20,7 +20,7 @@ const Projects = () => {
     'Tailwind CSS',
     'Axios'
   ],
-  image: 'shortly-preview.png',
+  image: 'shortly-dashboard.png',
   link: 'https://shortly1.vercel.app/',
   github: 'https://github.com/syam-00/Shortly-URL',
 },
