@@ -7,6 +7,26 @@ const Projects = () => {
   };
 
   const projects = [
+    
+{
+  title: 'Shortly – URL Shortener',
+  description:
+    'A full-stack URL shortening platform that converts long URLs into short, shareable links. Features include instant URL generation, automatic redirection, URL history management, copy functionality, editing, deletion, and anonymous user sessions.',
+  technologies: [
+    'React.js',
+    'Node.js',
+    'Express.js',
+    'MongoDB',
+    'Tailwind CSS',
+    'Axios'
+  ],
+  image: 'shortly-preview.png',
+  link: 'https://shortly1.vercel.app/',
+  github: 'https://github.com/syam-00/Shortly-URL',
+},
+
+
+
     {
       title: ' Live Weather Using APIs',
       description:
