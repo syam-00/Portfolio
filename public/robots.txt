@@ -1,0 +1,5 @@
+
+User-agent: *
+Allow: /
+
+Sitemap: https://syam-portfolio-nu.vercel.app/sitemap.xml
